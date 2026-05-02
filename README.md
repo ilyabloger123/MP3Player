@@ -17,5 +17,5 @@
 GDI+ — кастомная отрисовка эффектов и скругление углов.
 Инструменты: Visual Studio Installer Projects (для создания setup-файла).
   📦 Установка
-1.[Скачать установщик MP3Player (.msi)](https://github.com)
+1.[📥 Скачать установщик MP3Player (.msi)](https://github.com/ilyabloger123/MP3Player/releases/download/v1.0/MP3Player_setup.msi)
 2.Запустите установщик и следуйте инструкциям.
