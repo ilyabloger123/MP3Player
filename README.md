@@ -1,4 +1,3 @@
-<img width="344" height="495" alt="Снимок экрана 2026-05-03 134254" src="https://github.com/user-attachments/assets/c0e68a39-08b9-41b7-a2ea-b610b144a0c0" />
 # 🎵 MP3Player by ilyabloger123 
 
 Современный и интерактивный аудио-плеер на C#, созданный с использованием движка **BASS.net**. Это не просто проигрыватель, а проект с глубокой кастомизацией интерфейса и скрытыми игровыми механиками.
@@ -27,3 +26,4 @@
 <img width="678" height="463" alt="Снимок экрана 2026-05-03 134408" src="https://github.com/user-attachments/assets/733ac4b4-200c-4fa4-a271-1d6abb75cf85" />
 <img width="677" height="460" alt="Снимок экрана 2026-05-03 134351" src="https://github.com/user-attachments/assets/2ce83446-d715-4803-96b8-182702fcd66f" />
 <img width="681" height="459" alt="Снимок экрана 2026-05-03 134357" src="https://github.com/user-attachments/assets/9adf3bb0-5694-4302-a8cc-2cbfe89ebed4" />
+<img width="344" height="495" alt="Снимок экрана 2026-05-03 134254" src="https://github.com/user-attachments/assets/c0e68a39-08b9-41b7-a2ea-b610b144a0c0" />
