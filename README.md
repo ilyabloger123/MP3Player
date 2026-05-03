@@ -20,10 +20,9 @@
 * **Инструменты:** Visual Studio Installer Projects.
 
 ## 📦 Установка
-1. [📥 **Скачать установщик MP3Player (.msi)**](https://github.com/ilyabloger123/MP3Player/releases/download/v1.0/MP3Player_setup.msi)
-2. Запустите установщик и следуйте инструкциям.
-
-<img width="684" height="471" alt="Снимок экрана 2026-05-02 214605" src="https://github.com/user-attachments/assets/36fbed70-f1e5-4a50-ae21-632852462306" />
-<img width="684" height="467" alt="Снимок экрана 2026-05-02 214531" src="https://github.com/user-attachments/assets/715b4d82-a6e3-4afc-8993-c7f1d283d403" />
-<img width="696" height="477" alt="Снимок экрана 2026-05-02 214450" src="https://github.com/user-attachments/assets/65d37569-99d0-4c11-8220-44bd4e8b8368" />
-<img width="699" height="483" alt="Снимок экрана 2026-05-02 214441" src="https://github.com/user-attachments/assets/3aaec8fa-ca1e-4d2c-ba66-a5e4f6d3ab0a" />
+1. [📥 **Скачать установщик MP3Player (.msi)**](https://github.com/ilyabloger123/MP3Player/releases/download/v1.1/MP3Player_setup.msi)
+2. Запустите установщик и следуйте инструкциям.<img width="239" height="492" alt="Снимок экрана 2026-05-03 134310" src="https://github.com/user-attachments/assets/0c15b48f-00f6-4a48-b657-f37dd6374bd9" />
+<img width="677" height="460" alt="Снимок экрана 2026-05-03 134422" src="https://github.com/user-attachments/assets/01f13c92-2ac7-4b2e-a8fb-86528e9dd8bf" />
+<img width="678" height="463" alt="Снимок экрана 2026-05-03 134408" src="https://github.com/user-attachments/assets/733ac4b4-200c-4fa4-a271-1d6abb75cf85" />
+<img width="677" height="460" alt="Снимок экрана 2026-05-03 134351" src="https://github.com/user-attachments/assets/2ce83446-d715-4803-96b8-182702fcd66f" />
+<img width="681" height="459" alt="Снимок экрана 2026-05-03 134357" src="https://github.com/user-attachments/assets/9adf3bb0-5694-4302-a8cc-2cbfe89ebed4" />
