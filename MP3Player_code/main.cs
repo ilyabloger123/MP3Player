@@ -10,6 +10,7 @@ namespace MP3Player
 {
     public partial class main : Form
     {
+        About about = new About();
         private void StartFalling()
         {
             Timer fallTimer = new Timer { Interval = 15 };
@@ -796,6 +797,11 @@ namespace MP3Player
         private void MINIMIZEBUTTON_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void ABOUTBUTTON_Click(object sender, EventArgs e)
+        {
+            about.Show();
         }
     }
 }

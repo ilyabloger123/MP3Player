@@ -58,6 +58,7 @@
             this.CAPTIONTEXT = new System.Windows.Forms.Label();
             this.EXITBUTTON = new System.Windows.Forms.Button();
             this.MINIMIZEBUTTON = new System.Windows.Forms.Button();
+            this.ABOUTBUTTON = new System.Windows.Forms.Button();
             this.VU_LEFT = new MP3Player.VerticalProgressBar();
             this.VU_RIGHT = new MP3Player.VerticalProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.SONGTIME)).BeginInit();
@@ -147,7 +148,7 @@
             // LOOP
             // 
             this.LOOP.AutoSize = true;
-            this.LOOP.Location = new System.Drawing.Point(32, 57);
+            this.LOOP.Location = new System.Drawing.Point(118, 37);
             this.LOOP.Name = "LOOP";
             this.LOOP.Size = new System.Drawing.Size(85, 17);
             this.LOOP.TabIndex = 7;
@@ -353,6 +354,18 @@
             this.MINIMIZEBUTTON.MouseEnter += new System.EventHandler(this.MINIMIZEBUTTON_MouseEnter);
             this.MINIMIZEBUTTON.MouseLeave += new System.EventHandler(this.MINIMIZEBUTTON_MouseLeave);
             // 
+            // ABOUTBUTTON
+            // 
+            this.ABOUTBUTTON.BackColor = System.Drawing.Color.White;
+            this.ABOUTBUTTON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ABOUTBUTTON.Location = new System.Drawing.Point(32, 55);
+            this.ABOUTBUTTON.Name = "ABOUTBUTTON";
+            this.ABOUTBUTTON.Size = new System.Drawing.Size(107, 23);
+            this.ABOUTBUTTON.TabIndex = 27;
+            this.ABOUTBUTTON.Text = "О программе";
+            this.ABOUTBUTTON.UseVisualStyleBackColor = false;
+            this.ABOUTBUTTON.Click += new System.EventHandler(this.ABOUTBUTTON_Click);
+            // 
             // VU_LEFT
             // 
             this.VU_LEFT.Location = new System.Drawing.Point(3, 30);
@@ -377,6 +390,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 451);
+            this.Controls.Add(this.ABOUTBUTTON);
             this.Controls.Add(this.MINIMIZEBUTTON);
             this.Controls.Add(this.EXITBUTTON);
             this.Controls.Add(this.CAPTIONTEXT);
@@ -455,6 +469,7 @@
         private System.Windows.Forms.Label CAPTIONTEXT;
         private System.Windows.Forms.Button EXITBUTTON;
         private System.Windows.Forms.Button MINIMIZEBUTTON;
+        private System.Windows.Forms.Button ABOUTBUTTON;
     }
 }
 
