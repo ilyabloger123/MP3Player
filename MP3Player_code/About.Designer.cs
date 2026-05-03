@@ -41,7 +41,7 @@
             // ICON
             // 
             this.ICON.Image = ((System.Drawing.Image)(resources.GetObject("ICON.Image")));
-            this.ICON.Location = new System.Drawing.Point(225, 8);
+            this.ICON.Location = new System.Drawing.Point(465, 8);
             this.ICON.Name = "ICON";
             this.ICON.Size = new System.Drawing.Size(88, 88);
             this.ICON.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -51,19 +51,18 @@
             // 
             // MP3PLAYERLABEL
             // 
-            this.MP3PLAYERLABEL.AutoSize = true;
             this.MP3PLAYERLABEL.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MP3PLAYERLABEL.Location = new System.Drawing.Point(9, 8);
             this.MP3PLAYERLABEL.Name = "MP3PLAYERLABEL";
-            this.MP3PLAYERLABEL.Size = new System.Drawing.Size(210, 62);
+            this.MP3PLAYERLABEL.Size = new System.Drawing.Size(432, 62);
             this.MP3PLAYERLABEL.TabIndex = 1;
-            this.MP3PLAYERLABEL.Text = "MP3Player  v1.1\r\n(64-разрядная)";
+            this.MP3PLAYERLABEL.Text = "MP3Player  v1.2 (64-разрядная)";
             // 
             // AUTHORNAME
             // 
             this.AUTHORNAME.AutoSize = true;
             this.AUTHORNAME.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AUTHORNAME.Location = new System.Drawing.Point(24, 77);
+            this.AUTHORNAME.Location = new System.Drawing.Point(12, 51);
             this.AUTHORNAME.Name = "AUTHORNAME";
             this.AUTHORNAME.Size = new System.Drawing.Size(166, 19);
             this.AUTHORNAME.TabIndex = 2;
@@ -71,13 +70,13 @@
             // 
             // UPDATENOTE
             // 
-            this.UPDATENOTE.AutoSize = true;
             this.UPDATENOTE.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UPDATENOTE.Location = new System.Drawing.Point(24, 134);
+            this.UPDATENOTE.Location = new System.Drawing.Point(1, 98);
             this.UPDATENOTE.Name = "UPDATENOTE";
-            this.UPDATENOTE.Size = new System.Drawing.Size(180, 76);
+            this.UPDATENOTE.Size = new System.Drawing.Size(452, 125);
             this.UPDATENOTE.TabIndex = 3;
-            this.UPDATENOTE.Text = "Что добавилось:\r\n\r\n-Кнопка \"О программе\"\r\n-Новая пасхалка";
+            this.UPDATENOTE.Text = "Что добавилось:\r\n\r\n-Визуализация: Добавлено отображение обложек альбомов.\r\n-Новая" +
+    " пасхалка.";
             // 
             // LTMP
             // 
@@ -102,7 +101,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(330, 450);
+            this.ClientSize = new System.Drawing.Size(565, 450);
             this.Controls.Add(this.THANKS);
             this.Controls.Add(this.LTMP);
             this.Controls.Add(this.UPDATENOTE);

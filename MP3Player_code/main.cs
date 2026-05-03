@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.IO;
 using System.Windows.Forms;
+using TagLib;
 using Un4seen.Bass;
 using Un4seen.Bass.AddOn.Fx;
-using System.Drawing.Drawing2D;
 
 
 namespace MP3Player
 {
     public partial class main : Form
     {
-        About about = new About();
         private void StartFalling()
         {
             Timer fallTimer = new Timer { Interval = 15 };
@@ -98,89 +99,70 @@ namespace MP3Player
 
         private void ApplyTheme()
         {
+            Color darkBack = Color.FromArgb(30, 30, 30);
+            Color darkAccent = Color.FromArgb(40, 40, 40);
+            Color lightBack = SystemColors.Control;
+            Color lightAccent = Color.FromArgb(220, 220, 220);
+
             if (isDarkTheme)
             {
-                this.BackColor = Color.FromArgb(30, 30, 30);
+                this.BackColor = darkBack;
 
-                SONGLABEL.ForeColor = Color.White;
-                VOLUMELABEL.ForeColor = Color.White;
-                TIME.ForeColor = Color.White;
-                SPEEDLABEL.ForeColor = Color.White;
-                THEMELABEL.ForeColor = Color.White;
-                DECORATIVETIMELABEL.ForeColor = Color.White;
-                DECORATIVEVOLUMELABEL.ForeColor = Color.White;
-                DECORATIVEBALANCELABEL.ForeColor = Color.White;
+                Color textC = Color.White;
+                SONGLABEL.ForeColor = VOLUMELABEL.ForeColor = TIME.ForeColor = textC;
+                SPEEDLABEL.ForeColor = THEMELABEL.ForeColor = MUTE.ForeColor = LOOP.ForeColor = textC;
+                DECORATIVETIMELABEL.ForeColor = DECORATIVEVOLUMELABEL.ForeColor = DECORATIVEBALANCELABEL.ForeColor = textC;
 
-                EXITBUTTON.BackColor = Color.FromArgb(45, 45, 45);
-                EXITBUTTON.ForeColor = Color.White;
-                MINIMIZEBUTTON.BackColor = Color.FromArgb(45, 45, 45);
-                MINIMIZEBUTTON.ForeColor = Color.White;
+                CAPTION.BackColor = CAPTIONTEXT.BackColor = darkAccent;
+                CAPTIONTEXT.ForeColor = textC;
+                EXITBUTTON.BackColor = MINIMIZEBUTTON.BackColor = darkAccent;
+                EXITBUTTON.ForeColor = MINIMIZEBUTTON.ForeColor = textC;
 
-                EXITBUTTON.BackColor = Color.FromArgb(40, 40, 40);
-                MINIMIZEBUTTON.BackColor = Color.FromArgb(40, 40, 40);
+                Color btnC = Color.FromArgb(50, 50, 50);
+                PLAY.BackColor = STOP.BackColor = OPEN.BackColor = THEMESWITCH.BackColor = SPEEDUP.BackColor = btnC;
+                PLAY.ForeColor = STOP.ForeColor = OPEN.ForeColor = THEMESWITCH.ForeColor = SPEEDUP.ForeColor = textC;
 
-                CAPTIONTEXT.BackColor = Color.FromArgb(40, 40, 40);
-                CAPTIONTEXT.ForeColor = Color.White;
-                CAPTION.BackColor = Color.FromArgb(40, 40, 40);
+                SONGVOLUME.BackColor = SONGTIME.BackColor = darkBack;
 
-                MUTE.ForeColor = Color.White;
-                LOOP.ForeColor = Color.White;
-
-                Color buttonColor = Color.FromArgb(50, 50, 50);
-                PLAY.BackColor = buttonColor; PLAY.ForeColor = Color.White;
-                STOP.BackColor = buttonColor; STOP.ForeColor = Color.White;
-                OPEN.BackColor = buttonColor; OPEN.ForeColor = Color.White;
-                THEMESWITCH.BackColor = buttonColor; THEMESWITCH.ForeColor = Color.White;
-                SPEEDUP.BackColor = buttonColor; SPEEDUP.ForeColor = Color.White;
-
-                SONGVOLUME.BackColor = Color.FromArgb(30, 30, 30);
-                SONGTIME.BackColor = Color.FromArgb(30, 30, 30);
+                if (SONGPREVIEW.Tag == null)
+                {
+                    SONGPREVIEW.Image = Properties.Resources.audio_image_white;
+                }
 
                 THEMELABEL.Text = "Тема: Тёмная";
-                THEMESWITCH.Text = "Поменять тему на:Светлая";
+                THEMESWITCH.Text = "Поменять тему на: Светлая";
             }
             else
             {
-                this.BackColor = SystemColors.Control;
+                this.BackColor = lightBack;
 
-                SONGLABEL.ForeColor = Color.Black;
-                VOLUMELABEL.ForeColor = Color.Black;
-                THEMELABEL.ForeColor = Color.Black;
-                SPEEDLABEL.ForeColor = Color.Black;
-                DECORATIVETIMELABEL.ForeColor = Color.Black;
-                DECORATIVEVOLUMELABEL.ForeColor = Color.Black;
-                DECORATIVEBALANCELABEL.ForeColor = Color.Black;
+                Color textC = Color.Black;
+                SONGLABEL.ForeColor = VOLUMELABEL.ForeColor = TIME.ForeColor = textC;
+                SPEEDLABEL.ForeColor = THEMELABEL.ForeColor = MUTE.ForeColor = LOOP.ForeColor = textC;
+                DECORATIVETIMELABEL.ForeColor = DECORATIVEVOLUMELABEL.ForeColor = DECORATIVEBALANCELABEL.ForeColor = textC;
 
-                EXITBUTTON.BackColor = Color.FromArgb(230, 230, 230);
-                EXITBUTTON.ForeColor = Color.Black;
-                MINIMIZEBUTTON.BackColor = Color.FromArgb(230, 230, 230);
-                MINIMIZEBUTTON.ForeColor = Color.Black;
+                CAPTION.BackColor = CAPTIONTEXT.BackColor = lightAccent;
+                CAPTIONTEXT.ForeColor = textC;
+                EXITBUTTON.BackColor = MINIMIZEBUTTON.BackColor = lightAccent;
+                EXITBUTTON.ForeColor = MINIMIZEBUTTON.ForeColor = textC;
 
-                EXITBUTTON.BackColor = Color.FromArgb(220, 220, 220);
-                MINIMIZEBUTTON.BackColor = Color.FromArgb(220, 220, 220);
+                Color btnC = SystemColors.ControlLight;
+                PLAY.BackColor = STOP.BackColor = OPEN.BackColor = THEMESWITCH.BackColor = SPEEDUP.BackColor = btnC;
+                PLAY.ForeColor = STOP.ForeColor = OPEN.ForeColor = THEMESWITCH.ForeColor = SPEEDUP.ForeColor = textC;
 
-                CAPTIONTEXT.BackColor = Color.FromArgb(220, 220, 220);
-                CAPTIONTEXT.ForeColor = Color.Black;
-                CAPTION.BackColor = Color.FromArgb(220, 220, 220);
+                SONGVOLUME.BackColor = SONGTIME.BackColor = lightBack;
 
-                TIME.ForeColor = Color.Black;
-                MUTE.ForeColor = Color.Black;
-                LOOP.ForeColor = Color.Black;
-
-                Color btnDefault = SystemColors.ControlLight;
-                PLAY.BackColor = btnDefault; PLAY.ForeColor = Color.Black;
-                STOP.BackColor = btnDefault; STOP.ForeColor = Color.Black;
-                OPEN.BackColor = btnDefault; OPEN.ForeColor = Color.Black;
-                THEMESWITCH.BackColor = btnDefault; THEMESWITCH.ForeColor = Color.Black;
-                SPEEDUP.BackColor = btnDefault; SPEEDUP.ForeColor = Color.Black;
-
-                SONGVOLUME.BackColor = SystemColors.Control;
-                SONGTIME.BackColor = SystemColors.Control;
+                if (SONGPREVIEW.Tag == null)
+                {
+                    SONGPREVIEW.Image = Properties.Resources.audio_image_black;
+                }
 
                 THEMELABEL.Text = "Тема: Светлая";
-                THEMESWITCH.Text = "Поменять тему на:Темная";
+                THEMESWITCH.Text = "Поменять тему на: Темная";
             }
         }
+
+
         private void MoveForm(MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -208,21 +190,49 @@ namespace MP3Player
             SONGLABEL.Text = "Сейчас играет: " + System.IO.Path.GetFileName(path);
 
             stream = Bass.BASS_StreamCreateFile(path, 0, 0, BASSFlag.BASS_STREAM_DECODE);
+
+            try
+            {
+                var file = TagLib.File.Create(path);
+
+                if (file.Tag.Pictures.Length > 0)
+                {
+                    var bin = (byte[])(file.Tag.Pictures[0].Data.Data);
+                    using (MemoryStream ms = new MemoryStream(bin))
+                    {
+                        Image img = Image.FromStream(ms);
+                        SONGPREVIEW.Image = new Bitmap(img);
+                        SONGPREVIEW.Tag = "cover";
+                    }
+                }
+                else
+                {
+                    SONGPREVIEW.Tag = null;
+                    SONGPREVIEW.Image = isDarkTheme ? Properties.Resources.audio_image_white : Properties.Resources.audio_image_black;
+                }
+            }
+            catch
+            {
+                SONGPREVIEW.Tag = null;
+                SONGPREVIEW.Image = isDarkTheme ? Properties.Resources.audio_image_white : Properties.Resources.audio_image_black;
+            }
+
             tempoStream = BassFx.BASS_FX_TempoCreate(stream, BASSFlag.BASS_FX_FREESOURCE);
 
             CAPTIONTEXT.Text = "MP3Player — Играет";
 
             Bass.BASS_ChannelSetAttribute(tempoStream, BASSAttribute.BASS_ATTRIB_VOL, SONGVOLUME.Value / 50f);
-
             Bass.BASS_ChannelSetAttribute(tempoStream, BASSAttribute.BASS_ATTRIB_PAN, TRACKPAN.Value / 10f);
 
             long bytes = Bass.BASS_ChannelGetLength(tempoStream);
             SONGTIME.Maximum = (int)Bass.BASS_ChannelBytes2Seconds(tempoStream, bytes);
 
             Bass.BASS_ChannelPlay(tempoStream, false);
+
             PLAY.Text = "Ⅱ";
-            PLAY.ForeColor = Color.Cyan;
+            PLAY.ForeColor = isDarkTheme ? Color.Cyan : Color.Blue;
         }
+
         private void CloseStream()
         {
             if (tempoStream != 0)
@@ -801,7 +811,17 @@ namespace MP3Player
 
         private void ABOUTBUTTON_Click(object sender, EventArgs e)
         {
-            about.Show();
+            Form openAbout = Application.OpenForms["About"];
+
+            if (openAbout != null)
+            {
+                openAbout.Focus();
+            }
+            else
+            {
+                About about = new About();
+                about.Show();
+            }
         }
     }
 }

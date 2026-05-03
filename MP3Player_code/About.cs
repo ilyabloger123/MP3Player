@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MP3Player
@@ -45,6 +38,8 @@ namespace MP3Player
                     resizeTimer.Stop();
                     resizeTimer.Dispose();
 
+                    UPDATENOTE.Text = "Что добавилось:\r\n\r\n-Визуализация: Добавлено отображение обложек альбомов.\r\n-Новая пасхалка\r\n-Поменялся размер окна \"О программе\"";
+
                     System.Media.SystemSounds.Exclamation.Play();
                 }
             };
@@ -77,7 +72,7 @@ namespace MP3Player
                     timer.Stop();
                     timer.Dispose();
 
-                    StartResizing(241, 489);
+                    StartResizing(471, 489);
                 }
             };
             timer.Start();

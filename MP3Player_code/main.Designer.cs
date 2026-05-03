@@ -59,19 +59,21 @@
             this.EXITBUTTON = new System.Windows.Forms.Button();
             this.MINIMIZEBUTTON = new System.Windows.Forms.Button();
             this.ABOUTBUTTON = new System.Windows.Forms.Button();
+            this.SONGPREVIEW = new System.Windows.Forms.PictureBox();
             this.VU_LEFT = new MP3Player.VerticalProgressBar();
             this.VU_RIGHT = new MP3Player.VerticalProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.SONGTIME)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SONGVOLUME)).BeginInit();
             this.TRAYMENU.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TRACKPAN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SONGPREVIEW)).BeginInit();
             this.SuspendLayout();
             // 
             // OPEN
             // 
             this.OPEN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OPEN.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OPEN.Location = new System.Drawing.Point(34, 244);
+            this.OPEN.Location = new System.Drawing.Point(34, 308);
             this.OPEN.Name = "OPEN";
             this.OPEN.Size = new System.Drawing.Size(597, 25);
             this.OPEN.TabIndex = 0;
@@ -84,7 +86,7 @@
             // 
             this.PLAY.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PLAY.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PLAY.Location = new System.Drawing.Point(34, 172);
+            this.PLAY.Location = new System.Drawing.Point(34, 247);
             this.PLAY.Name = "PLAY";
             this.PLAY.Size = new System.Drawing.Size(295, 23);
             this.PLAY.TabIndex = 1;
@@ -97,7 +99,7 @@
             // 
             this.SONGTIME.AutoSize = false;
             this.SONGTIME.LargeChange = 2;
-            this.SONGTIME.Location = new System.Drawing.Point(34, 275);
+            this.SONGTIME.Location = new System.Drawing.Point(34, 339);
             this.SONGTIME.Maximum = 50;
             this.SONGTIME.Name = "SONGTIME";
             this.SONGTIME.Size = new System.Drawing.Size(597, 33);
@@ -108,7 +110,7 @@
             // SONGLABEL
             // 
             this.SONGLABEL.AutoSize = true;
-            this.SONGLABEL.Location = new System.Drawing.Point(34, 104);
+            this.SONGLABEL.Location = new System.Drawing.Point(34, 231);
             this.SONGLABEL.Name = "SONGLABEL";
             this.SONGLABEL.Size = new System.Drawing.Size(83, 13);
             this.SONGLABEL.TabIndex = 3;
@@ -121,7 +123,7 @@
             // 
             this.STOP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.STOP.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.STOP.Location = new System.Drawing.Point(336, 172);
+            this.STOP.Location = new System.Drawing.Point(336, 247);
             this.STOP.Name = "STOP";
             this.STOP.Size = new System.Drawing.Size(295, 23);
             this.STOP.TabIndex = 5;
@@ -139,7 +141,7 @@
             // TIME
             // 
             this.TIME.AutoSize = true;
-            this.TIME.Location = new System.Drawing.Point(34, 117);
+            this.TIME.Location = new System.Drawing.Point(34, 179);
             this.TIME.Name = "TIME";
             this.TIME.Size = new System.Drawing.Size(43, 13);
             this.TIME.TabIndex = 6;
@@ -148,7 +150,7 @@
             // LOOP
             // 
             this.LOOP.AutoSize = true;
-            this.LOOP.Location = new System.Drawing.Point(118, 37);
+            this.LOOP.Location = new System.Drawing.Point(37, 30);
             this.LOOP.Name = "LOOP";
             this.LOOP.Size = new System.Drawing.Size(85, 17);
             this.LOOP.TabIndex = 7;
@@ -160,7 +162,7 @@
             this.SONGVOLUME.AutoSize = false;
             this.SONGVOLUME.BackColor = System.Drawing.SystemColors.Control;
             this.SONGVOLUME.LargeChange = 1;
-            this.SONGVOLUME.Location = new System.Drawing.Point(37, 325);
+            this.SONGVOLUME.Location = new System.Drawing.Point(37, 389);
             this.SONGVOLUME.Maximum = 50;
             this.SONGVOLUME.Name = "SONGVOLUME";
             this.SONGVOLUME.Size = new System.Drawing.Size(597, 33);
@@ -171,7 +173,7 @@
             // VOLUMELABEL
             // 
             this.VOLUMELABEL.AutoSize = true;
-            this.VOLUMELABEL.Location = new System.Drawing.Point(34, 130);
+            this.VOLUMELABEL.Location = new System.Drawing.Point(34, 192);
             this.VOLUMELABEL.Name = "VOLUMELABEL";
             this.VOLUMELABEL.Size = new System.Drawing.Size(86, 13);
             this.VOLUMELABEL.TabIndex = 9;
@@ -180,7 +182,7 @@
             // MUTE
             // 
             this.MUTE.AutoSize = true;
-            this.MUTE.Location = new System.Drawing.Point(32, 37);
+            this.MUTE.Location = new System.Drawing.Point(37, 53);
             this.MUTE.Name = "MUTE";
             this.MUTE.Size = new System.Drawing.Size(80, 17);
             this.MUTE.TabIndex = 10;
@@ -191,7 +193,7 @@
             // DECORATIVETIMELABEL
             // 
             this.DECORATIVETIMELABEL.AutoSize = true;
-            this.DECORATIVETIMELABEL.Location = new System.Drawing.Point(309, 309);
+            this.DECORATIVETIMELABEL.Location = new System.Drawing.Point(309, 373);
             this.DECORATIVETIMELABEL.Name = "DECORATIVETIMELABEL";
             this.DECORATIVETIMELABEL.Size = new System.Drawing.Size(40, 13);
             this.DECORATIVETIMELABEL.TabIndex = 11;
@@ -200,7 +202,7 @@
             // DECORATIVEVOLUMELABEL
             // 
             this.DECORATIVEVOLUMELABEL.AutoSize = true;
-            this.DECORATIVEVOLUMELABEL.Location = new System.Drawing.Point(300, 361);
+            this.DECORATIVEVOLUMELABEL.Location = new System.Drawing.Point(300, 425);
             this.DECORATIVEVOLUMELABEL.Name = "DECORATIVEVOLUMELABEL";
             this.DECORATIVEVOLUMELABEL.Size = new System.Drawing.Size(62, 13);
             this.DECORATIVEVOLUMELABEL.TabIndex = 12;
@@ -209,7 +211,7 @@
             // SPEEDLABEL
             // 
             this.SPEEDLABEL.AutoSize = true;
-            this.SPEEDLABEL.Location = new System.Drawing.Point(34, 143);
+            this.SPEEDLABEL.Location = new System.Drawing.Point(34, 205);
             this.SPEEDLABEL.Name = "SPEEDLABEL";
             this.SPEEDLABEL.Size = new System.Drawing.Size(72, 13);
             this.SPEEDLABEL.TabIndex = 13;
@@ -219,7 +221,7 @@
             // 
             this.SPEEDUP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SPEEDUP.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SPEEDUP.Location = new System.Drawing.Point(34, 209);
+            this.SPEEDUP.Location = new System.Drawing.Point(34, 277);
             this.SPEEDUP.Name = "SPEEDUP";
             this.SPEEDUP.Size = new System.Drawing.Size(597, 25);
             this.SPEEDUP.TabIndex = 14;
@@ -269,7 +271,7 @@
             // THEMESWITCH
             // 
             this.THEMESWITCH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.THEMESWITCH.Location = new System.Drawing.Point(32, 80);
+            this.THEMESWITCH.Location = new System.Drawing.Point(34, 152);
             this.THEMESWITCH.Name = "THEMESWITCH";
             this.THEMESWITCH.Size = new System.Drawing.Size(163, 24);
             this.THEMESWITCH.TabIndex = 18;
@@ -280,7 +282,7 @@
             // THEMELABEL
             // 
             this.THEMELABEL.AutoSize = true;
-            this.THEMELABEL.Location = new System.Drawing.Point(34, 156);
+            this.THEMELABEL.Location = new System.Drawing.Point(32, 218);
             this.THEMELABEL.Name = "THEMELABEL";
             this.THEMELABEL.Size = new System.Drawing.Size(82, 13);
             this.THEMELABEL.TabIndex = 19;
@@ -288,7 +290,7 @@
             // 
             // TRACKPAN
             // 
-            this.TRACKPAN.Location = new System.Drawing.Point(37, 377);
+            this.TRACKPAN.Location = new System.Drawing.Point(37, 441);
             this.TRACKPAN.Minimum = -10;
             this.TRACKPAN.Name = "TRACKPAN";
             this.TRACKPAN.Size = new System.Drawing.Size(589, 45);
@@ -298,7 +300,7 @@
             // DECORATIVEBALANCELABEL
             // 
             this.DECORATIVEBALANCELABEL.AutoSize = true;
-            this.DECORATIVEBALANCELABEL.Location = new System.Drawing.Point(307, 424);
+            this.DECORATIVEBALANCELABEL.Location = new System.Drawing.Point(311, 484);
             this.DECORATIVEBALANCELABEL.Name = "DECORATIVEBALANCELABEL";
             this.DECORATIVEBALANCELABEL.Size = new System.Drawing.Size(44, 13);
             this.DECORATIVEBALANCELABEL.TabIndex = 22;
@@ -358,7 +360,7 @@
             // 
             this.ABOUTBUTTON.BackColor = System.Drawing.Color.White;
             this.ABOUTBUTTON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ABOUTBUTTON.Location = new System.Drawing.Point(32, 55);
+            this.ABOUTBUTTON.Location = new System.Drawing.Point(34, 76);
             this.ABOUTBUTTON.Name = "ABOUTBUTTON";
             this.ABOUTBUTTON.Size = new System.Drawing.Size(107, 23);
             this.ABOUTBUTTON.TabIndex = 27;
@@ -366,21 +368,31 @@
             this.ABOUTBUTTON.UseVisualStyleBackColor = false;
             this.ABOUTBUTTON.Click += new System.EventHandler(this.ABOUTBUTTON_Click);
             // 
+            // SONGPREVIEW
+            // 
+            this.SONGPREVIEW.Image = ((System.Drawing.Image)(resources.GetObject("SONGPREVIEW.Image")));
+            this.SONGPREVIEW.Location = new System.Drawing.Point(238, 46);
+            this.SONGPREVIEW.Name = "SONGPREVIEW";
+            this.SONGPREVIEW.Size = new System.Drawing.Size(192, 185);
+            this.SONGPREVIEW.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SONGPREVIEW.TabIndex = 28;
+            this.SONGPREVIEW.TabStop = false;
+            // 
             // VU_LEFT
             // 
-            this.VU_LEFT.Location = new System.Drawing.Point(3, 30);
+            this.VU_LEFT.Location = new System.Drawing.Point(8, 30);
             this.VU_LEFT.Maximum = 32768;
             this.VU_LEFT.Name = "VU_LEFT";
-            this.VU_LEFT.Size = new System.Drawing.Size(23, 420);
+            this.VU_LEFT.Size = new System.Drawing.Size(23, 473);
             this.VU_LEFT.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.VU_LEFT.TabIndex = 20;
             // 
             // VU_RIGHT
             // 
-            this.VU_RIGHT.Location = new System.Drawing.Point(640, 30);
+            this.VU_RIGHT.Location = new System.Drawing.Point(635, 30);
             this.VU_RIGHT.Maximum = 32768;
             this.VU_RIGHT.Name = "VU_RIGHT";
-            this.VU_RIGHT.Size = new System.Drawing.Size(23, 420);
+            this.VU_RIGHT.Size = new System.Drawing.Size(23, 473);
             this.VU_RIGHT.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.VU_RIGHT.TabIndex = 17;
             // 
@@ -389,7 +401,8 @@
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 451);
+            this.ClientSize = new System.Drawing.Size(666, 506);
+            this.Controls.Add(this.SONGPREVIEW);
             this.Controls.Add(this.ABOUTBUTTON);
             this.Controls.Add(this.MINIMIZEBUTTON);
             this.Controls.Add(this.EXITBUTTON);
@@ -433,6 +446,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.SONGVOLUME)).EndInit();
             this.TRAYMENU.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TRACKPAN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SONGPREVIEW)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -470,6 +484,7 @@
         private System.Windows.Forms.Button EXITBUTTON;
         private System.Windows.Forms.Button MINIMIZEBUTTON;
         private System.Windows.Forms.Button ABOUTBUTTON;
+        private System.Windows.Forms.PictureBox SONGPREVIEW;
     }
 }
 
