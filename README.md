@@ -21,9 +21,10 @@
 
 ## 📦 Установка
 1. [📥 **Скачать установщик MP3Player (.msi)**](https://github.com/ilyabloger123/MP3Player/releases/download/v1.1/MP3Player_setup.msi)
-2. Запустите установщик и следуйте инструкциям.<img width="239" height="492" alt="Снимок экрана 2026-05-03 134310" src="https://github.com/user-attachments/assets/0c15b48f-00f6-4a48-b657-f37dd6374bd9" />
-<img width="677" height="460" alt="Снимок экрана 2026-05-03 134422" src="https://github.com/user-attachments/assets/01f13c92-2ac7-4b2e-a8fb-86528e9dd8bf" />
-<img width="678" height="463" alt="Снимок экрана 2026-05-03 134408" src="https://github.com/user-attachments/assets/733ac4b4-200c-4fa4-a271-1d6abb75cf85" />
-<img width="677" height="460" alt="Снимок экрана 2026-05-03 134351" src="https://github.com/user-attachments/assets/2ce83446-d715-4803-96b8-182702fcd66f" />
-<img width="681" height="459" alt="Снимок экрана 2026-05-03 134357" src="https://github.com/user-attachments/assets/9adf3bb0-5694-4302-a8cc-2cbfe89ebed4" />
-<img width="344" height="495" alt="Снимок экрана 2026-05-03 134254" src="https://github.com/user-attachments/assets/c0e68a39-08b9-41b7-a2ea-b610b144a0c0" />
+2. Запустите установщик и следуйте инструкциям.
+<img width="476" height="493" alt="Снимок экрана 2026-05-03 173310" src="https://github.com/user-attachments/assets/c7889fb5-c4fb-42c3-9998-c3b3f28148c0" />
+<img width="581" height="494" alt="Снимок экрана 2026-05-03 173303" src="https://github.com/user-attachments/assets/98fdd9c4-4b46-498c-99bf-baea956290ee" />
+<img width="676" height="518" alt="Снимок экрана 2026-05-03 173248" src="https://github.com/user-attachments/assets/9abbc6a2-afd6-44c9-9b06-4f045527fc7b" />
+<img width="680" height="520" alt="Снимок экрана 2026-05-03 173238" src="https://github.com/user-attachments/assets/46ba92c2-750f-4adf-b94a-7c597591b941" />
+<img width="679" height="520" alt="Снимок экрана 2026-05-03 173232" src="https://github.com/user-attachments/assets/252d0f4d-391f-46c1-927a-7397fc6bb32c" />
+<img width="677" height="521" alt="Снимок экрана 2026-05-03 173225" src="https://github.com/user-attachments/assets/2390d73a-9456-44b5-9d53-e8543e4a1175" />
