@@ -1,0 +1,15 @@
+D:\appsC#\MP3Player\MP3Player\bin\x64\Release\MP3Player.exe.config
+D:\appsC#\MP3Player\MP3Player\bin\x64\Release\MP3Player.exe
+D:\appsC#\MP3Player\MP3Player\bin\x64\Release\MP3Player.pdb
+D:\appsC#\MP3Player\MP3Player\bin\x64\Release\Bass.Net.dll
+D:\appsC#\MP3Player\MP3Player\bin\x64\Release\TagLibSharp.dll
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.csproj.AssemblyReference.cache
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.About.resources
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.mainForm.resources
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.Properties.Resources.resources
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.Settings.resources
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.csproj.GenerateResource.cache
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.csproj.CoreCompileInputs.cache
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.csproj.Up2Date
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.exe
+D:\appsC#\MP3Player\MP3Player\obj\x64\Release\MP3Player.pdb
