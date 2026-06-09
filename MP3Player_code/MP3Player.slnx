@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="MP3Player/MP3Player.csproj" Id="5f1a7d1e-fda2-4421-b89a-21ec9437884d">
+    <Platform Project="x64" />
+  </Project>
+</Solution>
