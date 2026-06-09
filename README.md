@@ -19,7 +19,7 @@
 * **Инструменты:** Visual Studio Installer Projects.
 
 ## 📦 Установка
-1. [📥 **Скачать установщик MP3Player (.msi)**](https://github.com/ilyabloger123/MP3Player/releases/download/v1.1/MP3Player_setup.msi)
+1. [📥 **Скачать установщик MP3Player (.msi)**](https://github.com/ilyabloger123/MP3Player/raw/refs/heads/main/MP3Player_setup.msi)
 2. Запустите установщик и следуйте инструкциям.
 <img width="476" height="493" alt="Снимок экрана 2026-05-03 173310" src="https://github.com/user-attachments/assets/c7889fb5-c4fb-42c3-9998-c3b3f28148c0" />
 <img width="581" height="494" alt="Снимок экрана 2026-05-03 173303" src="https://github.com/user-attachments/assets/98fdd9c4-4b46-498c-99bf-baea956290ee" />
