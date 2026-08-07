@@ -13,7 +13,7 @@
 ## 🕹 Пасхалки и Секреты
 Проект содержит уникальные интерактивные элементы:
 
-<img width="10" height="13" alt="???" src="https://github.com/user-attachments/assets/e55e8000-d7ca-4566-a85c-ccd10b50fe2c" />
+<img width="20" height="23" alt="???" src="https://github.com/user-attachments/assets/e55e8000-d7ca-4566-a85c-ccd10b50fe2c" />
 
 ## 🛠 Технологический стек
 * **Язык:** C# (.NET 10.0)
