@@ -12,6 +12,7 @@
 
 ## 🕹 Пасхалки и Секреты
 Проект содержит уникальные интерактивные элементы:
+
 <img width="62" height="65" alt="KOTOSTAFTERCLICK" src="https://github.com/user-attachments/assets/e55e8000-d7ca-4566-a85c-ccd10b50fe2c" />
 
 ## 🛠 Технологический стек
