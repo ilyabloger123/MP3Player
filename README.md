@@ -23,6 +23,13 @@
 ## 📦 Установка
 1. [📥 **Скачать установщик MP3Player (.msi)**](https://github.com/ilyabloger123/MP3Player/raw/refs/heads/main/MP3Player_setup.msi)
 2. Запустите установщик и следуйте инструкциям.
+
+<img width="682" height="525" alt="image" src="https://github.com/user-attachments/assets/86e706c8-53c0-4c44-9a36-ab7a1142dc40" />
+<img width="672" height="521" alt="image" src="https://github.com/user-attachments/assets/0ca9a5b3-3514-4eb2-a264-8a77d016d5eb" />
+
+<img width="460" height="251" alt="image" src="https://github.com/user-attachments/assets/03160ec8-80a8-4b26-a310-ba1790786018" />
+<img width="517" height="302" alt="image" src="https://github.com/user-attachments/assets/eb1640bc-f469-44b2-a7c7-c4692e9567a1" />
+
 <img width="476" height="493" alt="Снимок экрана 2026-05-03 173310" src="https://github.com/user-attachments/assets/c7889fb5-c4fb-42c3-9998-c3b3f28148c0" />
 <img width="581" height="494" alt="Снимок экрана 2026-05-03 173303" src="https://github.com/user-attachments/assets/98fdd9c4-4b46-498c-99bf-baea956290ee" />
 <img width="676" height="518" alt="Снимок экрана 2026-05-03 173248" src="https://github.com/user-attachments/assets/9abbc6a2-afd6-44c9-9b06-4f045527fc7b" />
